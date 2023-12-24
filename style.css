@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: #FF656C;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#navbar ul li a {
+    color: black;
+    display: block;
+    margin-top: 2px;
+    padding: 3px 39px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+
+
+#navbar ul li a:hover {
+    background-color: white;
+}
+
+#logo {
+    margin: 8px 12px;
+    cursor: pointer;
+}
+
+#logo img {
+    height: 40px;
+    margin: 3px 5px;
+}
+
+#logo img:hover {
+
+    background-color: white;
+    border-radius: 20px;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(89deg, rgba(232, 235, 150, 1) 0%, rgba(246, 129, 225, 1) 100%);
+}
+
+
+.box {
+    width: 50%;
+    height: 92vh;
+    text-align: center;
+}
+
+.box1 {
+    max-width: 730px;
+
+}
+
+.box1 h1 {
+    font-size: 3em;
+    color: black;
+    display: flex;
+    text-align: end;
+    justify-content: flex-start;
+    padding-top: 30%;
+    padding-bottom: 10%;
+    padding-left: 12%;
+    letter-spacing: 8px;
+}
+
+.box1 p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: black;
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    padding-bottom: 15%;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.box1 :hover {
+    cursor: default;
+}
+
+#btn {
+
+    background-color: #FF656C;
+    color: white;
+    border: none;
+    padding: 12px 70px;
+    display: flex;
+    justify-content: left;
+    margin-left: 12%;
+    margin-top: -3%;
+
+}
+
+
+#btn:hover {
+    background-color: #FF656C;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.box2 {
+    display: block;
+    overflow: hidden;
+}
+
+.box2 img {
+    position: relative;
+    height: 50vh;
+    width: 31rem;
+    left: -6rem;
+    zoom: 2;
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        margin-bottom: 20px;
+    }
+
+    .box {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 70%;
+    }
+
+    .box1 h1 {
+        font-size: 2.5em;
+        padding-top: 20%;
+        padding-bottom: 8%;
+        padding-left: 18%;
+        position: relative;
+        left: 40%;
+        white-space: nowrap;
+
+
+    }
+
+    .box1 p {
+        padding-bottom: 12%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    #btn {
+        padding: 10px 50px;
+        margin-top: 20px;
+        margin-left: 8%;
+    }
+
+    .box2 img {
+        position: relative;
+        top: 17%;
+        height: auto;
+        width: 100%;
+        left: 0;
+        zoom: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        margin-bottom: 20px;
+    }
+
+    .box {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .box1 h1 {
+        font-size: 2em;
+        position: relative;
+        left: 3%;
+    }
+
+    .box1 p {
+        padding-bottom: 12%;
+        padding-left: 5%;
+        padding-right: 5%;
+
+    }
+
+    #btn {
+        padding: 8px 30px;
+        margin-top: 15px;
+    }
+
+    .box2 img {
+        width: 100%;
+        height: 20%;
+    }
+}
